@@ -10,29 +10,33 @@
     android:gravity="center">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Acesso Restrito"
+        android:text="Autenticador"
         android:textColor="@color/black"
         android:textSize="26dp"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="16dp"/>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp">
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_senha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         app:passwordToggleEnabled="true">
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_senha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
@@ -45,4 +49,18 @@
         android:layout_height="wrap_content"
         android:text="Acessar"/>
 
+    <Button
+        android:id="@+id/btnAutenticar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Autenticar"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnSair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sair"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:visibility="gone"/>
 </LinearLayout>

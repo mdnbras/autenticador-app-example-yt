@@ -20,7 +20,7 @@ android {
 
     productFlavors {
         dev {
-            buildConfigField "String", "BASE_URL", "\"http://127.0.0.1:8080\""
+            buildConfigField "String", "BASE_URL", "\"http://192.168.0.56:8080\""
         }
 
         prod {
@@ -57,4 +57,6 @@ dependencies {
 
     implementation platform('com.google.firebase:firebase-bom:29.3.1')
     implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-database'
 }
